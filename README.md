@@ -27,6 +27,7 @@ export GTEST_OUTPUT=xml:/tmp/report.xml; ./business-test
 # Content
 
 The project is composed of some client code made out of two classes:
+
 1. `CorbaProxy`: which is an example of a class used to provide connectivity through
 the Corba protocol. It could have been anything: a database proxy, another utility class.
 The purpose here is to demonstrate the dependency injection pattern.
