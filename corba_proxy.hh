@@ -6,10 +6,12 @@
 class CorbaProxy {
 public:
   CorbaProxy() {}
-  void corba_call_1(unsigned int i) {
+  virtual ~CorbaProxy() {}
+
+  virtual void corba_call_1(unsigned int i) {
     std::cout << "corba_call_1 " << i << std::endl;
   }
-  void corba_call_2() {
+  virtual void corba_call_2() {
     std::cout << "corba_call_2" << std::endl;
   }
 };
